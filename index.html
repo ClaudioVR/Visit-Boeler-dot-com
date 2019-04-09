@@ -21,19 +21,21 @@
         <a href="#!" class="brand-logo">Visit Bøler</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
+          <li><a href="sass.html">Good to know</a></li>
+          <li><a href="badges.html">Eat &amp; Drink</a></li>
+          <li><a href="collapsible.html">Sea &amp; Do</a></li>
+          <li><a href="mobile.html">Events</a></li>
+          <li><a href="mobile.html">Stay</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">Javascript</a></li>
-      <li><a href="mobile.html">Mobile</a></li>
+      <li><a href="sass.html">Good to know</a></li>
+      <li><a href="badges.html">Eat &amp; Drink</a></li>
+      <li><a href="collapsible.html">Sea &amp; Do</a></li>
+      <li><a href="mobile.html">Events</a></li>
+      <li><a href="mobile.html">Stay</a></li>
     </ul>
 
 
@@ -46,10 +48,11 @@
           <a href="#!" class="brand-logo">Visit:Bøler</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="sass.html">Good to know</a></li>
+            <li><a href="badges.html">Eat &amp; Drink</a></li>
+            <li><a href="collapsible.html">Sea &amp; Do</a></li>
+            <li><a href="mobile.html">Events</a></li>
+            <li><a href="mobile.html">Stay</a></li>
           </ul>
         </div>
       </nav>
@@ -138,7 +141,51 @@
 </div>
 
 
-<div class="divider"></div>
+
+  <footer class="page-footer light-blue darken-1">
+    <div class="container">
+
+      <div class="row">
+        <div class="col l3 s12">
+          <h5 class="white-text">Bøler &amp; Co</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div >
+
+    <div class="row light-blue darken-3">
+      <div class="container">
+        <h2>Visit:Bøler</h2>
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -147,32 +194,7 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
+  <script src="scripts.js"></script>
 
-    $(document).ready(function() {
-
-      // CAROUSEL
-      $('.carousel').carousel({
-        dist: 0,
-        padding: 0,
-        fullWidth: true,
-        indicators: true,
-        duration: 200,
-      });
-
-      autoplay()
-
-      function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 8000);
-      }
-
-      $('.parallax').parallax();
-
-      $('.sidenav').sidenav();
-
-    });
-  </script>
 </body>
-
 </html>
