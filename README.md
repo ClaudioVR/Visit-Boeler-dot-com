@@ -6,4 +6,4 @@ This has been an exercise and challenge, putting into use Materialize, jQuery pl
 
 Work in progress.
 
-Visit the mock page here: 
+Visit the mock page here: https://claudiovr.github.io/Visit-Boeler-dot-com/
