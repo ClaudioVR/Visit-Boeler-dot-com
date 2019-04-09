@@ -1,0 +1,224 @@
+/* styles.css */
+
+.divider {
+  height: 500px;
+  background: white;
+}
+
+#transparent-nav {
+  display: none;
+}
+
+#mobile-top-div p {
+  font-size: .6rem;
+  padding: .8rem;
+  margin: 0;
+}
+
+.carousel {
+  height: 65vh !important;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(50%);
+  z-index: -1;
+}
+
+#panel-1::before {
+  background-image: url('./imgages/carousel/beautiful-clear-water-color-1453627.jpg');
+}
+
+#panel-2::before {
+  background-image: url('./imgages/carousel/bicycle-biking-bmx-1068596.jpg');
+}
+
+#panel-3::before {
+  background-image: url('./imgages/carousel/blossom-branches-cherry-blossom-981369 (1).jpg');
+}
+
+#panel-4::before {
+  background-image: url('./imgages/carousel/bright-daylight-environment-240040 (1).jpg');
+}
+
+.panel-text {
+  z-index: 10;
+}
+
+/* Grid 1 ------------------------------------------------ */
+/* ---------------------------------------------------- */
+
+.grid-container {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 5px;
+}
+
+  .grid-item {
+    display: flex;
+    height: 100%;
+  }
+
+  .grid-item-text {
+    color: white;
+    margin-top: auto;
+    padding: 1rem;
+    z-index: 1;
+  }
+
+.grid-item-a {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  position: relative;
+}
+
+.grid-item-a::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/adult-cactus-camera-297755.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(50%);
+}
+
+.secondary-grid-item{
+  /* position: relative; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* .grid-item-transport::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  filter: contrast(50%);
+  background-image: url('./imgages/grid-1/berlin-blonde-commute-21410.jpg');
+} */
+
+.grid-item-transport {
+    background-image: url('./imgages/grid-1/berlin-blonde-commute-21410.jpg');
+}
+
+.grid-item-oslo {
+    background-image: url('./imgages/grid-1/architecture-bike-city-1070945.jpg');
+}
+
+.grid-item-food {
+    background-image: url('./imgages/grid-1/blur-breakfast-chef-262978.jpg');
+}
+
+.grid-item-nature {
+    background-image: url('./imgages/grid-1/clouds-daylight-environment-518485.jpg');
+}
+
+.grid-item-relax {
+    background-image: url('./imgages/grid-1/adult-blur-close-up-1172207.jpg');
+}
+
+.grid-item-seasons {
+    background-image: url('./imgages/grid-1/bench-cold-dawn-133171.jpg');
+}
+
+
+/* Parallax ---------------------------------------------------------*/
+/*  ---------------------------------------------------------*/
+
+.parallax-container {
+  position: relative;
+  display: flex;
+}
+
+#parallax-img {
+  filter: contrast(70%);
+}
+
+.parallax-text {
+  width: 100%;
+  position: relative;
+  margin-top: auto;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+#meet-local-p {
+  display: flex;
+  align-items: center;
+}
+
+
+/* @media Qureies ---------------------------------------------- */
+/*  ---------------------------------------------- */
+
+@media (min-width: 900px) {
+
+  #mobile-top-div {
+    display: none;
+  }
+
+  #transparent-nav {
+    display: block;
+  }
+
+  .carousel-fixed-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .carousel-item h2{
+    margin-top: 20%;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  nav .brand-logo {
+    left: 0;
+    padding-left: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 260px);
+  }
+
+  .grid-item-a {
+    grid-column: 1 / 2;
+  }
+
+  .parallax-text h2{
+    font-size: 10rem
+  }
+
+  .parallax-text p{
+    font-size: 1.2rem
+  }
+
+  #meet-local-p {
+    position: absolute;
+    right: 5%;;
+    bottom: 5%;
+  }
+
+}
