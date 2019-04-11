@@ -36,6 +36,9 @@ p {
   margin: 0;
 }
 
+/* carousel -----------------------------------------------*/
+/* -----------------------------------------------*/
+
 .carousel {
   height: 65vh !important;
 }
@@ -73,8 +76,13 @@ p {
 }
 
 .panel-text {
+  margin-top: 10rem;
   z-index: 10;
 }
+
+  .panel-text h2 {
+    font-size: 3rem !important;
+  }
 
 /* Dropdown menu  -----------------------------------*/
 /*   -----------------------------------*/
@@ -277,6 +285,14 @@ footer {
 
   #transparent-nav {
     display: block;
+  }
+
+  .panel-text h2 {
+    font-size: 8rem !important;
+  }
+
+  .panel-text p {
+    margin-top: 3rem;
   }
 
   nav ul a:hover {
