@@ -1,8 +1,29 @@
 /* styles.css */
 
-.divider {
-  height: 500px;
-  background: white;
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.thick-hr {
+  border: 1px solid white;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  overflow: visible;
 }
 
 #transparent-nav {
@@ -55,6 +76,81 @@
   z-index: 10;
 }
 
+/* Dropdown menu  -----------------------------------*/
+/*   -----------------------------------*/
+
+.dropdown-t {
+  display: inline-block;
+}
+
+.dropdown-c {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 63px;
+  width: 100%;
+  /* height: 600px; */
+  background-color: #039be5;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0;
+  z-index: 10000;
+}
+
+.dropdown-t:hover .dropdown-c {
+  display: block;
+}
+
+#dropdown-top-row {
+  /* height: 80%; */
+  padding: 0;
+  line-height: 20px;
+}
+
+#dropdown-top-row a {
+  margin: 0;
+  padding: 0;
+}
+  #dropdown-top-row a:hover {
+  text-decoration: underline;
+  }
+
+#read-more {
+  background-color: #8bc34a;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 3rem
+}
+
+#dropdown-bottom-row  {
+  padding: 1rem;
+}
+
+#app-icon {
+  color: black;
+}
+
+/* Intro -------------------------------------------------- */
+/*  -------------------------------------------------- */
+
+.intro-section {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.intro-buttons {
+  margin-top: 2rem;
+}
+
+/* Video --------------------------------------------------*/
+/*  --------------------------------------------------*/
+
+.video-container {
+  width: 90%;
+  margin: 5rem auto !important;
+}
+
 /* Grid 1 ------------------------------------------------ */
 /* ---------------------------------------------------- */
 
@@ -102,15 +198,6 @@
   background-size: cover;
   background-position: center;
 }
-
-/* .grid-item-transport::before {
-  position: absolute;
-  content: '';
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  filter: contrast(50%);
-  background-image: url('./imgages/grid-1/berlin-blonde-commute-21410.jpg');
-} */
 
 .grid-item-transport {
     background-image: url('./imgages/grid-1/berlin-blonde-commute-21410.jpg');
@@ -163,6 +250,13 @@
   align-items: center;
 }
 
+/* Card  ----------------------------------------------------- */
+/*   ----------------------------------------------------- */
+
+card img {
+  height: 50px !important;
+}
+
 
 /* Footer  ----------------------------------------------------- */
 /*   ----------------------------------------------------- */
@@ -174,6 +268,7 @@ footer {
 /* @media Qureies ---------------------------------------------- */
 /*  ---------------------------------------------- */
 
+
 @media (min-width: 900px) {
 
   #mobile-top-div {
@@ -182,6 +277,15 @@ footer {
 
   #transparent-nav {
     display: block;
+  }
+
+  nav ul a:hover {
+    background-color: #039be5 !important;
+  }
+
+  nav {
+    box-shadow: none;
+    border-bottom: 1px solid white;
   }
 
   .carousel-fixed-item {
@@ -204,6 +308,10 @@ footer {
   nav .brand-logo {
     left: 0;
     padding-left: 1rem;
+  }
+
+  .video-container {
+    width: 60%;
   }
 
   .grid-container {
