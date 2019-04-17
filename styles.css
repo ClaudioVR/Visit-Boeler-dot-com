@@ -1,5 +1,9 @@
 /* styles.css */
 
+* {
+  --image-contrast: 50%;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -154,10 +158,23 @@ p {
 /* Video --------------------------------------------------*/
 /*  --------------------------------------------------*/
 
-.video-container {
-  width: 90%;
-  margin: 5rem auto !important;
+.resp-container {
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 
 /* Grid 1 ------------------------------------------------ */
 /* ---------------------------------------------------- */
@@ -208,27 +225,99 @@ p {
 }
 
 .grid-item-transport {
-    background-image: url('./imgages/grid-1/berlin-blonde-commute-21410.jpg');
+    position: relative;
+}
+
+.grid-item-transport::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/berlin-blonde-commute-21410.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(var(--image-contrast));
 }
 
 .grid-item-oslo {
-    background-image: url('./imgages/grid-1/architecture-bike-city-1070945.jpg');
+    position: relative;
+}
+
+.grid-item-oslo::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/architecture-bike-city-1070945.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(var(--image-contrast));
 }
 
 .grid-item-food {
-    background-image: url('./imgages/grid-1/blur-breakfast-chef-262978.jpg');
+    position: relative;
+}
+
+.grid-item-food::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/blur-breakfast-chef-262978.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(var(--image-contrast));
 }
 
 .grid-item-nature {
-    background-image: url('./imgages/grid-1/clouds-daylight-environment-518485.jpg');
+    position: relative;
+}
+
+.grid-item-nature::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/clouds-daylight-environment-518485.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(var(--image-contrast));
 }
 
 .grid-item-relax {
-    background-image: url('./imgages/grid-1/adult-blur-close-up-1172207.jpg');
+    position: relative;
+}
+
+.grid-item-relax::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/adult-blur-close-up-1172207.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(var(--image-contrast));
 }
 
 .grid-item-seasons {
-    background-image: url('./imgages/grid-1/bench-cold-dawn-133171.jpg');
+  position: relative;
+}
+
+.grid-item-seasons::before {
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('./imgages/grid-1/bench-cold-dawn-133171.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: contrast(var(--image-contrast));
 }
 
 
@@ -271,6 +360,15 @@ card img {
 
 footer {
   margin-top: 5rem;
+}
+
+#footer-lower-row {
+  display: flex;
+  align-items: center;
+}
+
+#footer-lower-row h2 {
+  margin: 2rem 0;
 }
 
 /* @media Qureies ---------------------------------------------- */
@@ -324,10 +422,6 @@ footer {
   nav .brand-logo {
     left: 0;
     padding-left: 1rem;
-  }
-
-  .video-container {
-    width: 60%;
   }
 
   .grid-container {
