@@ -4,6 +4,14 @@
   --image-contrast: 50%;
 }
 
+h2 {
+  font-family: 'Monoton', cursive;
+}
+
+* p, h4, h6 {
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .d-flex {
   display: flex;
   align-items: center;
@@ -80,12 +88,22 @@ p {
 }
 
 .panel-text {
-  margin-top: 10rem;
+  margin-top: 14rem;
   z-index: 10;
+  height: 100%;
 }
 
   .panel-text h2 {
-    font-size: 3rem !important;
+    font-size: 4.5rem !important;
+    margin-bottom: 3rem;
+    line-height: 550px;
+  }
+
+  .panel-text p {
+    font-size: 1rem !important;
+    text-align: center;
+    width: 50%;
+    margin: auto;
   }
 
 /* Dropdown menu  -----------------------------------*/
@@ -345,6 +363,7 @@ p {
 #meet-local-p {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 /* Card  ----------------------------------------------------- */
@@ -385,12 +404,17 @@ footer {
     display: block;
   }
 
+  .panel-text {
+    margin-top: 8rem !important;
+  }
+
   .panel-text h2 {
     font-size: 8rem !important;
   }
 
   .panel-text p {
     margin-top: 3rem;
+    font-size: 1.4rem !important;
   }
 
   nav ul a:hover {
@@ -419,9 +443,10 @@ footer {
     background-color: rgba(0, 0, 0, 0);
   }
 
-  nav .brand-logo {
+  .brand-logo {
     left: 0;
     padding-left: 1rem;
+    font-family: 'Monoton', cursive;
   }
 
   .grid-container {
@@ -447,4 +472,19 @@ footer {
     bottom: 5%;
   }
 
+}
+
+@media (min-width: 1300px) {
+  .panel-text {
+    margin-top: -2rem !important;
+  }
+
+  .panel-text h2 {
+    font-size: 9rem !important;
+  }
+
+  .panel-text p {
+    margin-top: 3rem;
+    font-size: 1.5rem !important;
+  }
 }
